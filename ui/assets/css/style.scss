@@ -1,0 +1,84 @@
+@import "./variables";
+
+$screen-desktop-lg-min: 1200px;
+$screen-desktop-min: 992px;
+$screen-tablet-min: 768px;
+$screen-phone-lg-min: 426px;
+
+input, .input {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Serif";
+  font-size: 16px;
+  .major-heading {
+      font-size: 2em;
+      color: $white;
+  }
+  .primary-heading {
+      font-size: 1.9em; // ~30px
+      letter-spacing: 0.015em;
+      line-height: 36px;
+  }
+  .secondary-heading {
+    font-size: 1.5em;
+    letter-spacing: 0.015em;
+    line-height: 28px;
+    color: $white;
+  }
+  .primary-text {
+    // ~20px
+    font-size: 1.25em;
+  }
+  .secondary-text {
+    font-size: 1.125em;
+  }
+  input {
+    &::placeholder,
+    &:focus:-moz-placeholder,
+    &:focus:-ms-input-placeholder,
+    &:focus::-moz-placeholder,
+    &:focus::-webkit-input-placeholder {
+      color: $gray;
+    }
+  }
+  input.primary-text {
+      .mainLoginInput:-moz-placeholder,
+      .mainLoginInput:-ms-input-placeholder,
+      .mainLoginInput::-moz-placeholder,
+      .mainLoginInput::-webkit-input-placeholder {
+          font-size: 1.25em;
+      }
+  }
+
+  hr {
+      width: 100%;
+      border-top: 1px solid rgba($black, 0.3);
+      display: block;
+
+  }
+
+  a, a:hover, a:focus {
+    color: $black;
+    text-decoration: none;
+  }
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  strong {
+    display: block;
+    font-weight: normal;
+  }
+  label {
+    font-weight: normal;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .full-screen {
+    height: 100%;
+    min-height: 100vh;
+  }
+}
